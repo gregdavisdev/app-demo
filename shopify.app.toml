@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e8e675cdc4a9700ae8314d820bc885f6"
+name = "app-demo"
+application_url = "https://isle-those-echo-allowed.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "tsunami-fashion-usa.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://isle-those-echo-allowed.trycloudflare.com/auth/callback",
+  "https://isle-those-echo-allowed.trycloudflare.com/auth/shopify/callback",
+  "https://isle-those-echo-allowed.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
